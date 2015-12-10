@@ -21,20 +21,25 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         switch pageControl.currentPage {
             
         case 0:
-            self.xrayImage.image = self.enemaImages[1]
-            
-            
-        case 1:
-            self.xrayImage.image = self.enemaImages[2]
-            
-        case 2:
             self.xrayImage.image = self.enemaImages[3]
+            pageControl.currentPage=3
+            
             
         case 3:
+            self.xrayImage.image = self.enemaImages[2]
+            pageControl.currentPage=2
+            
+        case 2:
+            self.xrayImage.image = self.enemaImages[1]
+            pageControl.currentPage=1
+            
+        case 1:
             self.xrayImage.image = self.enemaImages[0]
+            pageControl.currentPage=0
             
         default:
             self.xrayImage.image = self.enemaImages[0]
+            pageControl.currentPage=0
             
         }
         
@@ -44,6 +49,30 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func swipeLeft(sender: AnyObject) {
+        switch pageControl.currentPage {
+            
+        case 0:
+            self.xrayImage.image = self.enemaImages[1]
+            pageControl.currentPage=1
+            
+            
+        case 1:
+            self.xrayImage.image = self.enemaImages[2]
+            pageControl.currentPage=2
+            
+        case 2:
+            self.xrayImage.image = self.enemaImages[3]
+            pageControl.currentPage=3
+            
+        case 3:
+            self.xrayImage.image = self.enemaImages[0]
+            pageControl.currentPage=0
+            
+        default:
+            self.xrayImage.image = self.enemaImages[0]
+            pageControl.currentPage=0
+            
+        }
     }
     
     @IBOutlet weak var pageControl: UIPageControl!
@@ -83,14 +112,8 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     */
     
-    func configurePageControl() {
-        //   self.pageControl.numberOfPages = <some reference to the number of pages>
-        self.pageControl.currentPage = 0
-        self.pageControl.tintColor = UIColor.redColor()
-        self.pageControl.pageIndicatorTintColor = UIColor.blackColor()
-        self.pageControl.currentPageIndicatorTintColor = UIColor.greenColor()
-        self.view.addSubview(pageControl)
-    }
+   
+
     /*
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)

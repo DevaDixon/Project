@@ -15,10 +15,6 @@
 		598A007C1C1A292700DBDFAF /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A007B1C1A292700DBDFAF /* ProjectTests.swift */; };
 		598A00871C1A292700DBDFAF /* ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A00861C1A292700DBDFAF /* ProjectUITests.swift */; };
 		598A00951C1A2E5400DBDFAF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A00941C1A2E5400DBDFAF /* MainViewController.swift */; };
-		598A009B1C1A31E400DBDFAF /* Barium Enema AP View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 598A00971C1A31E400DBDFAF /* Barium Enema AP View.jpg */; };
-		598A009C1C1A31E400DBDFAF /* Barium Enema LLD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 598A00981C1A31E400DBDFAF /* Barium Enema LLD.jpg */; };
-		598A009D1C1A31E400DBDFAF /* Barium Enema PA View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 598A00991C1A31E400DBDFAF /* Barium Enema PA View.jpg */; };
-		598A009E1C1A31E400DBDFAF /* Barium Enema RLD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 598A009A1C1A31E400DBDFAF /* Barium Enema RLD.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +49,6 @@
 		598A00861C1A292700DBDFAF /* ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUITests.swift; sourceTree = "<group>"; };
 		598A00881C1A292700DBDFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		598A00941C1A2E5400DBDFAF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		598A00971C1A31E400DBDFAF /* Barium Enema AP View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barium Enema AP View.jpg"; sourceTree = "<group>"; };
-		598A00981C1A31E400DBDFAF /* Barium Enema LLD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barium Enema LLD.jpg"; sourceTree = "<group>"; };
-		598A00991C1A31E400DBDFAF /* Barium Enema PA View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barium Enema PA View.jpg"; sourceTree = "<group>"; };
-		598A009A1C1A31E400DBDFAF /* Barium Enema RLD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barium Enema RLD.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +104,6 @@
 				598A00941C1A2E5400DBDFAF /* MainViewController.swift */,
 				598A006A1C1A292700DBDFAF /* Main.storyboard */,
 				598A006D1C1A292700DBDFAF /* Assets.xcassets */,
-				598A00961C1A31E400DBDFAF /* enemaImages */,
 				598A006F1C1A292700DBDFAF /* LaunchScreen.storyboard */,
 				598A00721C1A292700DBDFAF /* Info.plist */,
 			);
@@ -135,17 +126,6 @@
 				598A00881C1A292700DBDFAF /* Info.plist */,
 			);
 			path = ProjectUITests;
-			sourceTree = "<group>";
-		};
-		598A00961C1A31E400DBDFAF /* enemaImages */ = {
-			isa = PBXGroup;
-			children = (
-				598A00971C1A31E400DBDFAF /* Barium Enema AP View.jpg */,
-				598A00981C1A31E400DBDFAF /* Barium Enema LLD.jpg */,
-				598A00991C1A31E400DBDFAF /* Barium Enema PA View.jpg */,
-				598A009A1C1A31E400DBDFAF /* Barium Enema RLD.jpg */,
-			);
-			path = enemaImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				598A00711C1A292700DBDFAF /* LaunchScreen.storyboard in Resources */,
-				598A009E1C1A31E400DBDFAF /* Barium Enema RLD.jpg in Resources */,
-				598A009C1C1A31E400DBDFAF /* Barium Enema LLD.jpg in Resources */,
-				598A009B1C1A31E400DBDFAF /* Barium Enema AP View.jpg in Resources */,
-				598A009D1C1A31E400DBDFAF /* Barium Enema PA View.jpg in Resources */,
 				598A006E1C1A292700DBDFAF /* Assets.xcassets in Resources */,
 				598A006C1C1A292700DBDFAF /* Main.storyboard in Resources */,
 			);
