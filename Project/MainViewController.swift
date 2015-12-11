@@ -14,6 +14,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
 
     var enemaImages: [UIImage] = []
     
+    @IBOutlet weak var xrayLabel: UILabel!
     @IBOutlet weak var xrayImage: UIImageView!
     
     @IBAction func swipeRight(sender: AnyObject) {
@@ -23,19 +24,23 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         case 0:
             self.xrayImage.image = self.enemaImages[3]
             pageControl.currentPage=3
+            xrayLabel.text="Posterior-Anterior View"
             
             
         case 3:
             self.xrayImage.image = self.enemaImages[2]
             pageControl.currentPage=2
+            xrayLabel.text="RLD View"
             
         case 2:
             self.xrayImage.image = self.enemaImages[1]
             pageControl.currentPage=1
+            xrayLabel.text="LLD View"
             
         case 1:
             self.xrayImage.image = self.enemaImages[0]
             pageControl.currentPage=0
+            xrayLabel.text="AP View"
             
         default:
             self.xrayImage.image = self.enemaImages[0]
@@ -54,19 +59,23 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         case 0:
             self.xrayImage.image = self.enemaImages[1]
             pageControl.currentPage=1
+            xrayLabel.text="LLD View"
             
             
         case 1:
             self.xrayImage.image = self.enemaImages[2]
             pageControl.currentPage=2
+            xrayLabel.text="RLD View"
             
         case 2:
             self.xrayImage.image = self.enemaImages[3]
             pageControl.currentPage=3
+            xrayLabel.text="PA View"
             
         case 3:
             self.xrayImage.image = self.enemaImages[0]
             pageControl.currentPage=0
+            xrayLabel.text="AP View"
             
         default:
             self.xrayImage.image = self.enemaImages[0]
@@ -79,7 +88,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
 
     @IBAction func changePage(sender: AnyObject) {
         
-        
+        //
         
     }
     override func viewDidLoad() {
@@ -90,6 +99,11 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         UIImage(named: "RLD.jpg")!,
         UIImage(named: "PA.jpg")!
         ]
+        
+       
+        self.xrayImage.image = enemaImages[0]
+        self.pageControl.currentPage=0
+        xrayLabel.text="AP View"
     
         
 

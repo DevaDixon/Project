@@ -17,18 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-rh-ruW">
-                                <rect key="frame" x="305" y="502" width="39" height="37"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="changePage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ozk-PK-L1a"/>
-                                </connections>
-                            </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AP" translatesAutoresizingMaskIntoConstraints="NO" id="ge3-yl-7dG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ge3-yl-7dG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-rh-ruW">
+                                <rect key="frame" x="253" y="502" width="95" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.59607843140000005" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changePage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ozk-PK-L1a"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-xo-amx">
+                                <rect key="frame" x="153" y="461" width="294" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.27260788050000001" green="0.6481879921" blue="0.1026822179" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,6 +56,7 @@
                     <connections>
                         <outlet property="pageControl" destination="kuM-rh-ruW" id="4Ej-3m-Jp7"/>
                         <outlet property="xrayImage" destination="ge3-yl-7dG" id="ozo-JT-Emv"/>
+                        <outlet property="xrayLabel" destination="bAj-xo-amx" id="uev-tx-2Du"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,7 +74,4 @@
             <point key="canvasLocation" x="305" y="337"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="AP" width="2448" height="3264"/>
-    </resources>
 </document>
