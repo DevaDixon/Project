@@ -22,17 +22,23 @@
                                 <animations/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-rh-ruW">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-rh-ruW">
                                 <rect key="frame" x="253" y="502" width="95" height="37"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.59607843140000005" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Szl-st-67s"/>
+                                </constraints>
                                 <connections>
                                     <action selector="changePage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ozk-PK-L1a"/>
                                 </connections>
                             </pageControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-xo-amx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL TEXT HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-xo-amx">
                                 <rect key="frame" x="153" y="461" width="294" height="41"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="1Mn-La-PGs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.27260788050000001" green="0.6481879921" blue="0.1026822179" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,12 +47,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kuM-rh-ruW" secondAttribute="trailing" constant="256" id="0gW-mO-5h4"/>
+                            <constraint firstAttribute="trailing" secondItem="kuM-rh-ruW" secondAttribute="trailing" constant="252" id="0gW-mO-5h4"/>
+                            <constraint firstItem="kuM-rh-ruW" firstAttribute="top" secondItem="bAj-xo-amx" secondAttribute="bottom" id="5Hj-gU-FGv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kuM-rh-ruW" secondAttribute="bottom" constant="61" id="8L8-7K-jUE"/>
                             <constraint firstItem="ge3-yl-7dG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A8e-TA-cky"/>
                             <constraint firstAttribute="trailing" secondItem="ge3-yl-7dG" secondAttribute="trailing" id="BxM-Ks-mIp"/>
+                            <constraint firstItem="kuM-rh-ruW" firstAttribute="centerX" secondItem="bAj-xo-amx" secondAttribute="centerX" id="Euv-7j-6YV"/>
                             <constraint firstItem="ge3-yl-7dG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Kgp-FS-LdD"/>
+                            <constraint firstItem="bAj-xo-amx" firstAttribute="centerX" secondItem="ge3-yl-7dG" secondAttribute="centerX" id="TA6-1S-uBh"/>
                             <constraint firstItem="ge3-yl-7dG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lQQ-lL-P8S"/>
+                            <constraint firstItem="bAj-xo-amx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="441" id="oMw-sq-6Vp"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="SBE-BX-Pgn" appends="YES" id="xUg-ZM-qrv"/>
